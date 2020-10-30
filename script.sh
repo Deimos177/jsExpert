@@ -19,7 +19,7 @@ for mediaFile in `ls $ASSETSFOLDER | grep .mp4`; do
         -c:a aac -ac 2 \
         -vcodec h264 -acodec aac \
         -ab 128k \
-        -movflags frag_keyframe+empty_moov+deafult_base_moof \
+        -movflags frag_keyframe+empty_moov+default_base_moof \
         -b:v 1500k \
         -maxrate 1500k \
         -bufsize 1000k \
@@ -32,7 +32,7 @@ for mediaFile in `ls $ASSETSFOLDER | grep .mp4`; do
         -c:a aac -ac 2 \
         -vcodec h264 -acodec aac \
         -ab 128k \
-        -movflags frag_keyframe+empty_moov+deafult_base_moof \
+        -movflags frag_keyframe+empty_moov+default_base_moof \
         -b:v 400k \
         -maxrate 400k \
         -bufsize 400k \
@@ -45,7 +45,7 @@ for mediaFile in `ls $ASSETSFOLDER | grep .mp4`; do
         -c:a aac -ac 2 \
         -vcodec h264 -acodec aac \
         -ab 128k \
-        -movflags frag_keyframe+empty_moov+deafult_base_moof \
+        -movflags frag_keyframe+empty_moov+default_base_moof \
         -b:v 300k \
         -maxrate 300k \
         -bufsize 300k \
